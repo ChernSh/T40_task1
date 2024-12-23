@@ -12,6 +12,9 @@ public:
 		:Publication(ISBN, name, author, year) {
 		this->number = number;
 	}
+	~Journal() {
+		cout << "Destructor journal " << name << endl;
+	}
 	int getManufacturer()const { return number; }
 	void setManufacturer(int number) { this->number = number; }
 

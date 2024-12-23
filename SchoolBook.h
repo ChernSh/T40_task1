@@ -14,6 +14,9 @@ public:
 	{
 		this->yearGroup = yearGroup;
 	}
+	~SchoolBook() {
+		cout << "Destructor shcoolbook " << name << endl;
+	}
 	int getYearGroup()const { return yearGroup; }
 	void setYearGroup(int yearGroup) { this->yearGroup = yearGroup; }
 

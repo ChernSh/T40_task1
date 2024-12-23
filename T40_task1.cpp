@@ -7,10 +7,8 @@ int main()
 {
     SchoolBook a;
     a.show();
-
     Book b;
     b.show();
-
     Journal c;
     c.show();
 

@@ -11,6 +11,9 @@ public:
 	Book(string ISBN, string name, string author, int year, string manufacturer) :Publication(ISBN, name, author, year) {
 		this->manufacturer = manufacturer;
 	}
+	~Book() {
+		cout << "Destructor book " << name << endl;
+	}
 	string getManufacturer()const { return manufacturer; }
 	void setManufacturer(string manufacturer) { this->manufacturer = manufacturer; }
 
